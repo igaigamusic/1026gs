@@ -1,0 +1,128 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(to bottom, #87CEEB 50%, #228B22 50%);
+    /* 空と地面のグラデーション */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* 横方向の中央揃え */
+    align-items: center;
+    /* 縦方向の中央揃え */
+    flex-direction: column;
+    /* 縦に並べる */
+    text-align: center;
+    height: 100%;
+    /* これが必要な場合 */
+}
+
+/* レトロゲーム風タイトル */
+.game-title {
+    color: #00ff00;/* レトロな蛍光グリーン */
+    margin-bottom: 20px;
+    text-shadow: 4px 4px #000;
+}
+
+/* ゲームスクリーン */
+.game-screen {
+    width: 600px;
+    height: 300px;
+    background-color: #333;
+    border: 4px solid #00ff00;
+    position: relative;
+    margin-bottom: 20px;
+    display: none;
+}
+
+/* 木のオブジェクトから障害物のオブジェクトへ変更 */
+.obstacle {
+    width: 40px;
+    height: 80px;
+    background-color: #8B4513;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+}
+
+/* チーズのオブジェクト */
+.cheese {
+    width: 30px;
+    height: 30px;
+    background-color: #FFD700;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    /* jsで動かすのにいったんアニメーションは消す */
+    /* animation: jump 2s infinite; */
+}
+
+/* ジャンプのアニメーション */
+/* @keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 50px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+} */
+
+
+/* スタートボタンのスタイル */
+.game-button-start {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: 3px solid #ff9900;
+    color: #000;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+.game-button-start:hover {
+    transform: scale(1.1);
+}
+
+.game-button-start:active {
+    transform: scale(1.05);
+}
+
+/* 終了ボタンのスタイル */
+.game-button-exit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: 3px solid #ff9900;
+    color: #000;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+.game-button-exit:hover {
+    transform: scale(1.1);
+}
+
+.game-button-exit:active {
+    transform: scale(1.05);
+}

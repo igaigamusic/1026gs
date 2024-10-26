@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game with Cheeses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="game-title">Cheese Academy Retro Game</h1>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <div class="game-screen">
+            <!-- 木のオブジェクト -->
+            <div class="obstacle"></div>
+            <!-- チーズのオブジェクト -->
+            <div class="cheese"></div>
+        </div>
+        <div class="controls">
+            <button class="game-button-start">Start</button>
+            <button class="game-button-exit">Exit</button>
+        </div>
+    </div>
+
+    <!-- 必ず自分で作成したjs/test.jsよりも上に貼り付ける -->
+    <!-- headではなく、ここに書いた方がサイトの読み込みが早くなる！！（ページ速度が速くなる！） -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jqueryが必ず先！！ -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
