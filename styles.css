@@ -69,7 +69,8 @@ body {
 /* 木のオブジェクトから障害物のオブジェクトへ変更 */
 .obstacle {
     width: 40px;
-    height: 80px;
+    /* JSで動かす障害物と同じheightにする */
+    height: 120px;
     background-color: #8B4513;
     position: absolute;
     right: 0;
