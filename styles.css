@@ -43,6 +43,29 @@ body {
     display: none;
 }
 
+/* ゴールエリアのスタイル */
+.goal {
+    width: 30px;
+    height: 100%;
+    background-color: #FFD700;
+    /* ゴールを目立たせるための明るい金色 */
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 4px solid #ffcc00;
+}
+
+/* ゴールエリアのテキスト */
+.goal-text {
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    /* テキストが見やすい位置に調整 */
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
 /* 木のオブジェクトから障害物のオブジェクトへ変更 */
 .obstacle {
     width: 40px;
@@ -59,7 +82,8 @@ body {
     height: 30px;
     background-color: #FFD700;
     position: absolute;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
     border-radius: 50%;
     /* jsで動かすのにいったんアニメーションは消す */
     /* animation: jump 2s infinite; */
